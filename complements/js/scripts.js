@@ -12,7 +12,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     let clusters = document.getElementsByClassName("ccm")
     for (let index = 0; index < clusters.length; index++) {
         clusters[index].style.display = "block"
-        clusters[index].style.width = "80%"
+        clusters[index].style.width = "90%"
     }
     let md = document.getElementsByClassName("md")
     for (let index = 0; index < md.length; index++) {
