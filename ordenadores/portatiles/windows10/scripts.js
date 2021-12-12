@@ -88,8 +88,10 @@ function initialize() {
 function appendData() {
     variable = init_html
     for (i = 0; i < n_per_fila; i++) {
-        variable += products[counter][0].replace('style="width:120px;height:240px;"', 'style="width:120px;height:240px;" class="'+class_html+'"')
-        counter++
+        if(counter < products.length){
+            variable += products[counter][0].replace('style="width:120px;height:240px;"', 'style="width:120px;height:240px;" class="'+class_html+'"')
+            counter++
+        }
     }
     $('#products').append(variable+"</div>")
     $('#products').append('<br>')
