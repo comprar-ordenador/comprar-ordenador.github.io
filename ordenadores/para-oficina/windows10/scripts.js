@@ -23,7 +23,12 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     n_per_fila = Math.floor((4*screen.availWidth/5)/(160))
 }
 let products = [
-    // AQUI ///////////////////////////////////////////
+    ['<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=informatic08f-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B082P78YN3&linkId=bf2ea4eb0608a6906308d963f6871182"></iframe>', 8, '512 SSD', '2 2.3GHz', 'Lenovo'],
+    ['<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=informatic08f-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B09BVHL8MX&linkId=d4011530d5546870090d0e95e396eea5"></iframe>', 8, '256 SSD', '4 2.7GHz', 'CHUWI'],
+    ['<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=informatic08f-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B08MZS77TN&linkId=197ab6e6543091503a78c2a0412fff27"></iframe>', 8, '128 SSD', '4 1.5GHz', 'Huashetrade'],
+    ['<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=informatic08f-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B097P2BJZ9&linkId=24063fe7f501ede6a1a40187eeb099ae"></iframe>', 8, '256 SSD', '4 2.6GHz', 'TECLAST'],
+    ['<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=informatic08f-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B09FJHDH27&linkId=c76af76dbe4f6ef2ca7a0566f2ed1c0a"></iframe>', 8, '256 SSD', '4 2.6GHz', 'TECLAST'],
+    ['<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=informatic08f-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B09JSGPPY3&linkId=082cfc81523781be19e2c3414d85e5f0"></iframe>', 8, '256 SSD', '4 2.3GHz', 'TECLAST'],
 ]
 let counter = 0
 let class_html = "column-3"
