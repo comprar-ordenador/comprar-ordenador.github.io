@@ -1,0 +1,16 @@
+Home (https://comprar-ordenador.github.io/)
+	- /portatiles        \
+	- /de-sobremesa       \
+	- /pc-gaming           \
+	- /para-oficinas        \
+	- /para-negocios         \
+
+	- /lenovo                  \\           |
+	- /apple                    \\          |
+	- /...                       \\         |
+                                            |
+					- (JS) ✨reseñas (/lg-plus.....)
+
+	- /contacto
+
+	- /vocabulario ...

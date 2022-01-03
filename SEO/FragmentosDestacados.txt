@@ -1,0 +1,39 @@
+Tipos de rich snippets: >> schemes.org
+1. Párrafo
+2. Lista
+3. Tabla
+
+- Usa lenguaje conversacional para responder una pregunta por voz
+  lenguaje cercano, explicativo y humano
+- Que las preguntas aparezcan en el artículo
+- Uso de sinónimos de palabras clave
+- La respuesta ha de tener en torno a 50 palabras
+- Aswerthepublic
+- Define la idea general al principio del contenido
+
+Ejemplo de complemento Json rich snippet:
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@id" : "https://unareceta.com/paella-con-pollo/",
+	"@type": "Recipe",
+	"author": "unareceta",
+	"recipeIngredient": [
+		"300 gr. de arroz&nbsp;bomba",
+		"500 gr. de pollo troceado",
+		"1 litro de caldo de pollo",
+		"2 pimientos rojos",
+		"2 tomates maduros",
+		"1 cebolla",
+		"1 lim&oacute;n",
+		"1 diente de ajo",
+		"Azafr&aacute;n"],
+	"description": "Si quieres preparar un paella en la que la carne sea la protagonista, entonces nuestra receta de paella con pollo te encantará. Una versión rica y fácil del tradicional arroz valenciano elaborado con productos de la huerta, y si la sirves con un alioli casero de seguro que triunfas. Con esta preparación podrás lucirte en la cocina de la mano de una receta en la que la sencillez y el sabor son protagonistas. ¿Comenzamos?",
+	"datePublished": "17 de julio de 2014",
+	"image": "https://unareceta.com/wp-content/uploads/2016/08/paella-de-pollo.jpg",
+	"name": "Receta de paella con pollo",
+	"recipeInstructions": "En una paellera echamos un buen chorro de aceite y lo ponemos a calentar a media potencia. Troceamos el pollo, lo salpimentamos a nuestro gusto y lo añadimos para dorarlo por ambos lados y que tome un bonito color. Cuando esté dorado, añade 800 ml de caldo de pollo y sube el fuego para que esta carne se vaya cocinado mientras pones a punto el resto de ingredientes de tu paella. Después, pela y corta todas las verduras, asegurándonos que queden en trocitos muy pequeños, ve reservando en un mismo recipiente pues la cocinaremos toda juntas. En una sartén aparte que sea espaciosa, añade aceite de oliva y lleva a fuego medio. Cuando esté caliente incorpora los vegetales y deja sofreír durante 10 minutos o hasta que estén dorados. Transcurrido este tiempo, añade el arroz a la sartén junto con el azafrán y sal al gusto. Remueve y deja sofreír durante 2 minutos para que el arroz tome un apetitoso tono dorado. A continuación, agrega la mezcla de arroz y vegetales sofritos a la paellera en la que se encuentra el pollo, cuyo caldo ya estará hirviendo y el nivel de agua habrá bajado. Sube la potencia del fuego al máximo y bájala a la mitad cuando el caldo hierva nuevamente. Remueve solo una vez y deja cocinar durante 20 minutos, este es el tiempo necesario para que el arroz bomba empleado en la elaboración de este plato quede perfectamente al punto. Recuerda que la paella con pollo es un plato seco, sin embargo si durante la cocción el caldo disminuye demasiado y el arroz aún no está en su punto, puedes añadir un poco más de líquido. Una vez lista apártala del fuego y deja reposar durante 5 minutos antes de servir ¡ya verás qué rica queda esta paella casera! Una opción ideal para hacer un plato con pollo de 10. ",
+	"prepTime": "PT14M",
+	"cookTime": "PT30M"
+}
+</script>
