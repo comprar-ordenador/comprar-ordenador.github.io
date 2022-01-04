@@ -83,20 +83,11 @@ a:hover{
 /* CLUSTERS */
 .cluster-card {
     display: inline-block;
-    width: 30%;
-}
-
-.cluster-card-b {
-    display: inline-block;
-    width: 45%;
 }
 
 .cluster-card:hover{
-    filter: brightness(1.25);
-}
-
-.cluster-card-b:hover{
-    filter: brightness(1.25);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .cluster-container {

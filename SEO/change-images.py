@@ -13,7 +13,7 @@ old_nav = '''
                         <a class="nav-link" href="/">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Modelos</a>
+                        <a class="nav-link dropdown-toggle" href="#">Tipos</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/portatiles/">Portátiles</a>
                             <a class="dropdown-item" href="/de-sobremesa/">De Sobremesa</a>
@@ -59,7 +59,7 @@ new_nav = '''
                         <a class="nav-link" href="/">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Modelos</a>
+                        <a class="nav-link dropdown-toggle" href="#">Tipos</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/portatiles/">Portátiles</a>
                             <a class="dropdown-item" href="/de-sobremesa/">De Sobremesa</a>
@@ -70,6 +70,12 @@ new_nav = '''
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#">Marcas</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/...">...</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Sistemas Operativos</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/...">...</a>
                         </div>
@@ -96,14 +102,14 @@ new_nav = '''
 
 directory = input("Enter the directory:  ")
 for p, d, f in walk(directory):
-    if ".git" not in p and 'imgs' not in p:
+    if ".git" not in p and 'imgs' not in p and 'C:\\Users\\Hugo\\Desktop\\JS-HTML-CSS\\informatica.team\\SEO' != p:
         for file in f:
             try:
                 text = open(join(p, file), 'r', encoding='utf-8').read()
                 text = text.replace(old_nav, new_nav)
-                # text = text.replace("comprar-ordenadores.webp", "comprar-ordenadores.webp")
+                # text = text.replace("los-informaticos", "comprar-ordenadores")
                 open(join(p, file), 'w', encoding='utf-8').write(text)
             except:
-                pass
+                print(join(p, file))
 
 print("DONE")
