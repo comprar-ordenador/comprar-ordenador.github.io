@@ -1,103 +1,89 @@
 from os import walk
 from os.path import join
 
-old_nav = '''
-        <nav style="position: fixed; width: 100%;" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top" role="navigation">
-            <a class="navbar-brand" href="/"><img style="width: 60px;" src="complements/imgs/comprar-ordenadores.webp" alt="comprar-ordenadores"> ϑrdenadores</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Tipos</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/portatiles/">Portátiles</a>
-                            <a class="dropdown-item" href="/de-sobremesa/">De Sobremesa</a>
-                            <a class="dropdown-item" href="/pc-gaming/">Gaming</a>
-                            <a class="dropdown-item" href="/para-oficina/">Para Oficinas</a>
-                            <a class="dropdown-item" href="/para-negocios/">Para Negocios</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Marcas</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/...">...</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/resenas/">Reseñas</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/reseñas/">...</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/componentes-de-un-ordenador-y-sus-funciones">Componentes y sus funciones</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/...">...</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+meta_keywords = '''
+    <meta name="keywords" content="{}">
 '''
-new_nav = '''
-        <nav style="position: fixed; width: 100%;" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top" role="navigation">
-            <a class="navbar-brand" href="/"><img style="width: 60px;" src="complements/imgs/comprar-ordenadores.webp" alt="comprar-ordenadores"> ϑrdenadores</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Tipos</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/portatiles/">Portátiles</a>
-                            <a class="dropdown-item" href="/de-sobremesa/">De Sobremesa</a>
-                            <a class="dropdown-item" href="/pc-gaming/">Gaming</a>
-                            <a class="dropdown-item" href="/para-oficina/">Para Oficinas</a>
-                            <a class="dropdown-item" href="/para-negocios/">Para Negocios</a>
-                        </div>
-                    </li>
+
+meta_keywords2 = '''
+    <meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="★ ϑrdenadores ★ | La Mejor Tienda Para Comprar Tu Ordenador en 2022" />
+	<meta property="og:description" content="✅Ofertas, modelos, reseñas, vocabulario... Todo lo que quieras saber sobre tu ordenador lo tienes en nuestra web ➤ ➤ ¡No compres tu Laptop o PC hasta conocer nuestra opinión ;)!" />
+	<meta property="og:url" content="https://comprar-ordenador.github.io/" />
+	<meta property="og:site_name" content="ϑrdenadores" />
+	<meta property="article:modified_time" content="2022-01-10T11:55:43+00:00" />
+	<meta property="og:image" content="https://comprar-ordenador.github.io/complements/imgs/comprar-ordenadores.webp" />
+	<meta property="og:image:width" content="471" />
+	<meta property="og:image:height" content="340" />
+'''
+
+nav_marcas = '''
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#">Marcas</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/...">...</a>
                         </div>
                     </li>
+'''
+
+nav_marcas2 = '''
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Marcas</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/lenovo">Lenovo</a>
+                            <a class="dropdown-item" href="/msi">MSI</a>
+                            <a class="dropdown-item" href="/dell">Dell</a>
+                            <a class="dropdown-item" href="/acer">Acer</a>
+                            <a class="dropdown-item" href="/asus">Asus</a>
+                            <a class="dropdown-item" href="/microsoft">Microsoft</a>
+                            <a class="dropdown-item" href="/apple">Apple</a>
+                            <a class="dropdown-item" href="/hp">HP</a>
+                            <a class="dropdown-item" href="/alienware">Alienware</a>
+                        </div>
+                    </li>
+'''
+
+nav_so = '''
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#">Sistemas Operativos</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/...">...</a>
                         </div>
                     </li>
+'''
+
+nav_so2 = '''
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/resenas/">Reseñas</a>
+                        <a class="nav-link dropdown-toggle" href="#">Sistemas Operativos</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/reseñas/">...</a>
+                            <a class="dropdown-item" href="/sin-os">Sin Sistema Operativo</a>
+                            <a class="dropdown-item" href="/windows">Windows</a>
+                            <a class="dropdown-item" href="/linux">Linux</a>
+                            <a class="dropdown-item" href="/macos">MacOS</a>
+                            <a class="dropdown-item" href="/chromeos">Chrome OS</a>
+                            <a class="dropdown-item" href="/freebsd">FreeBSD</a>
                         </div>
                     </li>
+'''
+
+nav_componentes = '''
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="/componentes-de-un-ordenador-y-sus-funciones">Componentes y sus funciones</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/...">...</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contacto">Contacto</a>
+'''
+
+nav_componentes2 = '''
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/vocabulario">Vocabulario</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/vocabulario">Todos</a>
+                            <a class="dropdown-item" href="/...">...</a>
+                        </div>
                     </li>
-                </ul>
-            </div>
-        </nav>
 '''
 
 directory = input("Enter the directory:  ")
@@ -106,8 +92,10 @@ for p, d, f in walk(directory):
         for file in f:
             try:
                 text = open(join(p, file), 'r', encoding='utf-8').read()
-                text = text.replace(old_nav, new_nav)
-                # text = text.replace("los-informaticos", "comprar-ordenadores")
+                text = text.replace(meta_keywords, meta_keywords2)
+                text = text.replace(nav_marcas, nav_marcas2)
+                text = text.replace(nav_so, nav_so2)
+                text = text.replace(nav_componentes, nav_componentes2)
                 open(join(p, file), 'w', encoding='utf-8').write(text)
             except:
                 print(join(p, file))
