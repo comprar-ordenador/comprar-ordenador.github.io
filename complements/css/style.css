@@ -3,6 +3,10 @@
     z-index: 2;
 }
 
+p{
+    font-size: 1.15em;
+}
+
 nav{
     z-index: 3;
 }
