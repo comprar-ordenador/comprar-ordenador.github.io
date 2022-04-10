@@ -2,25 +2,27 @@ from os import walk
 from os.path import join
 
 footer = '''
-    <footer>
-        <ul>
-            <li><label>👉</label><a style="color: white;" href="/ordenadores/"><u>MEJORES OFERTAS</u> de ordenadores</a></li><br>
-            <li><label>👉</label><a style="color: white;" href="/reseñas/">Reseñas</li><br>
-            <li><label>👉</label><a style="color: white;" href="/cursos-programacion/">Cursos de programación gratis</a></li><br>
-            <li><label>👉</label><a style="color: white;" href="/cursos-informatica/">Cursos de informática gratis</a></li><br>
-        </ul>
-    </footer>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/vocabulario">Vocabulario</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/vocabulario">Todos</a>
+                            <a class="dropdown-item" href="/...">...</a>
+                        </div>
+                    </li>
 '''
 
 footer2 = '''
-    <footer>
-        <ul class="footer-ul">
-            <li><label>👉</label><a style="color: white;" href="/ordenadores/"><u>MEJORES OFERTAS</u> de ordenadores</a></li><br>
-            <li><label>👉</label><a style="color: white;" href="/reseñas/">Reseñas</li><br>
-            <li><label>👉</label><a style="color: white;" href="/cursos-programacion/">Cursos de programación gratis</a></li><br>
-            <li><label>👉</label><a style="color: white;" href="/cursos-informatica/">Cursos de informática gratis</a></li><br>
-        </ul>
-    </footer>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/vocabulario">Vocabulario</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/vocabulario/CPU">CPU</a>
+                            <a class="dropdown-item" href="/vocabulario/GPU">GPU</a>
+                            <a class="dropdown-item" href="/vocabulario/disco-duro">Disco Duro</a>
+                            <a class="dropdown-item" href="/vocabulario/OS">OS</a>
+                            <a class="dropdown-item" href="/vocabulario/RAM">RAM</a>
+                            <a class="dropdown-item" href="/vocabulario/resolucion">Resolución</a>
+                        </div>
+                    </li>
 '''
 
 
