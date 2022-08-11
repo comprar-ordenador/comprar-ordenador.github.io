@@ -288,9 +288,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     </div>
     <script>
-        document.getElementById('ok-cookies').addEventListener("click", function(){document.getElementById('cookie-consent-banner').remove()}, false);
+        document.getElementById('ok-cookies').addEventListener("click", function(){
+            a = document.getElementById('cookie-consent-banner')
+            a.remove()
+        }, false);
 
-        document.getElementById('no-cookies').addEventListener("click", function(){window.history.back()}, false);
+        document.getElementById('no-cookies').addEventListener("click", function(){
+            a = window.history
+            a.back()
+        }, false);
     </script>
     <script src="../../complements/js/scripts.js"></script>
 </body>
