@@ -295,6 +295,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }, 2000);
         }, false);
     </script>
+    </script>
     <script>
         function sendMail(send_to, subject, body) {
             window.open('mailto:'+send_to.replaceAll("%", "%25").replaceAll(" ", "")+'?subject='+subject.replaceAll("%", "%25").replaceAll("?", "%3F").replaceAll("&", "%26").replaceAll(" ", "%20")+'&body='+body.replaceAll("%", "%25").replaceAll("?", "%3F").replaceAll("&", "%26").replaceAll(" ", "%20").replaceAll("\n", "%0A"));
