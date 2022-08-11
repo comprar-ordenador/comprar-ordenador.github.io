@@ -27,7 +27,7 @@
 	<meta property="og:description" content="¿Qué es un Sistema Operativo? Un OS, es el software base que posee cualquier ordenador y sobre el que se ejecuta todo lo demás. Hay 🚀muchas características a tener en cuenta para elegir. Vamos a trabajar este concepto para saber todo lo que debes saber a cerca de los SO. Entra e infórmate!" />
 	<meta property="og:url" content="https://comprar-ordenador.github.io/" />
 	<meta property="og:site_name" content="ϑrdenadores" />
-	<meta property="article:modified_time" content="2022-07-01T09:11:43+00:00" />
+	<meta property="article:modified_time" content="2022-08-11T02:20:00+00:00" />
 	<meta property="og:image" content="https://comprar-ordenador.github.io/complements/imgs/comprar-ordenadores.webp" />
 	<meta property="og:image:width" content="471" />
 	<meta property="og:image:height" content="340" />
@@ -333,12 +333,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         document.getElementById('ok-cookies').addEventListener("click", function(){
             a = document.getElementById('cookie-consent-banner')
-            a.remove()
+            setTimeout(() => {
+                a.remove()
+            }, 100);
         }, false);
 
         document.getElementById('no-cookies').addEventListener("click", function(){
             a = window.history
-            a.back()
+            setTimeout(() => {
+                a.back()
+            }, 100);
         }, false);
     </script>
     <script src="../../complements/js/scripts.js"></script>
