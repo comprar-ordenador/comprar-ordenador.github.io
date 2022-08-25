@@ -191,9 +191,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="footer-ul">
             <li><label>👉</label><a style="color: white;" href="/" target="blank"><u>Reseñas y mejores ofertas</u> de ordenadores</a></li><br>
             <li><label>👉</label><a style="color: white;" href="https://www.youtube.com/c/informaticodigo" target="blank">Tutoriales de programación e informática gratis</a></li><br>
-            <li><label>👉</label><a style="color: white;" href="/vocabulario/" target="blank">Vocabulario informático</li><br>
+            <li><label>👉</label><a style="color: white;" href="/vocabulario/" target="blank">Vocabulario informático</a></li><br>
         </ul>
     </footer>
+<script>
+  function cookiesAccepted() {
+    let div = document.getElementById("cookies-div")
+    div.remove()
+  }
+</script>
+<style>
+  .bg-custom{
+      background-color:#130f40;
+  }
+  .button-fixed{
+      bottom: 0;
+      position: fixed;
+      right: 0;
+      border-radius: 4px;
+  }
+  .fas{
+  cursor: pointer;
+  font-size: 24px;
+  }
+</style>
+<div class="row" id="cookies-div">
+    <div class="col-md-4 col-sm-12 button-fixed">
+        <div class="p-3 pb-4 bg-custom text-white">
+            <div class="row">
+                <div class="col-10">
+                    <h2>Allow Cookies</h2>
+                </div>
+          <div class="col-2 text-center">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <p>Esta página web usa cookies. Las cookies de este sitio web se usan para ofrecer algunas funciones y analizar el tráfico.<br>Las cookies utilizadas no contienen información de carácter personal identificable. Si continua navegando entendemos acepta su uso.</p>
+        <button type="button" onclick="cookiesAccepted()" class="btn btn-danger w-100">Aceptar</button>
+        <a href="/cookies/"><button type="button" class="btn btn-danger w-100">Política de Cookies</button></a>
+        <a href="/politica-de-privacidad/"><button type="button" class="btn btn-danger w-100">Política de privacidad</button></a>
+    </div>
+    </div>
+</div>
     <style>
             
             .cookie-consent-banner {
